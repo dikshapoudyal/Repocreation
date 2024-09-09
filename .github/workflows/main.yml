@@ -2,12 +2,12 @@ name : simple ci workflow
 on:
    push:
      branches:
-        -main
+         - main
 
 jobs:
- mytestbuild
-  runs-on:ubuntu-latest
+   mytestbuild:
+     runs-on: ubuntu-latest
 
-  steps:
-   -name : PRINT A TEST MESSAGE
-    run : echo "hello from $GITHUB_ACTOR!"
+   steps:
+   - name : PRINT A TEST MESSAGE
+      run : echo "hello from $GITHUB_ACTOR!"
